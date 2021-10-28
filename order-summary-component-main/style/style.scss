@@ -1,0 +1,135 @@
+// cdn
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// colors
+$white: rgb(255, 255, 255);
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+$desaturated-with-op:rgba(59, 74, 115, 0.2);
+
+// code
+body {
+    background-color: $very-pale-blue;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.bg {
+    background-image: url("../images/pattern-background-desktop.svg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card {
+    width: 400px;
+    height: 620px;
+    background-color: $white;
+    margin: 3em auto;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px $pale-blue;
+}
+
+.img {
+    background-image: url("../images/illustration-hero.svg");
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 14em;
+    width: 300px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 900;
+    color: $dark-blue;
+}
+
+.text-1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1em;
+    color: $desaturated-blue;
+}
+
+.panel {
+    background-color: $very-pale-blue;
+    border-radius: 5px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.dashed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    background-image: url("../images/icon-music.svg");
+    width: 40px;
+    height: 40px;
+    background-color: $pale-blue;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-2 {
+    margin-left: 15px;
+    color: $desaturated-blue;
+    line-height: 22px;
+}
+
+.text-2 span {
+    font-weight: 900;
+    color: $dark-blue;
+}
+
+.btn-sec {
+    color: $bright-blue;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-pri {
+    margin-top: 2em;
+    height: 32px;
+    color: $white;
+    background-color: $bright-blue;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: 700;
+    box-shadow: 0 15px 20px $desaturated-with-op;
+    cursor: pointer;
+}
+
+.btn-ter {
+    margin-top: 2em;
+    color: $dark-blue;
+    cursor: pointer;
+    font-weight: 700;
+}
